@@ -1,0 +1,21 @@
+{
+  "name": "typescript-mcp-hello-world-streamable",
+  "version": "1.0.0",
+  "description": "Minimal MCP server with streamable HTTP transport",
+  "main": "dist/mcp-server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mcp-server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^24.6.2",
+    "@types/express": "^5.0.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "express": "^5.1.0"
+  }
+}

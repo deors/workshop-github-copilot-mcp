@@ -1,0 +1,19 @@
+{
+  "name": "typescript-mcp-hello-world-stdio",
+  "version": "1.0.0",
+  "description": "Minimal MCP server with stdio transport",
+  "main": "dist/mcp-server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mcp-server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^24.6.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.19.1"
+  }
+}

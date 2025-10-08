@@ -1,0 +1,48 @@
+{
+  "servers": {
+    "01-typescript-mcp-hello-world-stdio": {
+      "type": "stdio",
+      "cwd": "${workspaceFolder}/01-typescript-mcp-hello-world-stdio",
+      "command": "node",
+      "args": [
+        "dist/mcp-server.js"
+      ]
+    },
+    "02-typescript-mcp-hello-world-streamable": {
+      "type": "streamable-http",
+      "url": "http://localhost:3000/stream"
+    },
+    "03-spring-mcp-hello-world-stdio": {
+      "type": "stdio",
+      "cwd": "${workspaceFolder}/03-spring-mcp-hello-world-stdio",
+      "command": "./mvnw",
+      "args": [
+        "spring-boot:run"
+      ]
+    },
+    "04-spring-mcp-hello-world-streamable": {
+      "type": "streamable-http",
+      "url": "http://localhost:3001/sse"
+    },
+    "05-quarkus-mcp-hello-world-stdio": {
+      "type": "stdio",
+      "cwd": "${workspaceFolder}/05-quarkus-mcp-hello-world-stdio",
+      "command": "./mvnw",
+      "args": [
+        "spring-boot:run"
+      ]
+    },
+    "06-quarkus-mcp-hello-world-streamable": {
+      "type": "streamable-http",
+      "url": "http://localhost:3002/stream"
+    },
+    "07-typescript-mcp-github-repos": {
+      "type": "streamable-http",
+      "url": "http://localhost:3003/stream"
+    },
+    "08-typescript-mcp-github-issues": {
+      "type": "streamable-http",
+      "url": "http://localhost:3004/stream"
+    }
+  }
+}
