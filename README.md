@@ -103,7 +103,7 @@ There is a third method now deprecated, SSE or server-sent events. The Internet 
 We are going to build MCP servers with two tools:
 
 - **greetPerson**: This tool will just respond with a string greeting a person. The name of the person is an input parameter for the tool.
-- **greetAudience**: This tool will respond with a message suitable to greet the whole audience of a given event. Tool parameters are the event name and its location.
+- **greetAudience**: This tool will respond with a message suitable to greet the whole audience of a given event. The tool parameters are the event name and its location.
 
 The provided solutions are built in Node.js/Typescript, Java/Spring AI, and Java/Quarkus. The code for the MCP servers are located in these folders:
 
@@ -129,9 +129,9 @@ TBC
 
 ##### 3.1.1. Testing through the command line
 
-Now that the MCP server is running, it is time to test it. In this case, lets use directly stdio in the terminal running the server.
+Now that the MCP server is running, it is time to test it.
 
-When using stdio testing involves simply typing the request Json in the terminal running the server and looking at the responses in that terminal. These are three key examples for your reference.
+The simpler way to test our MCP server with stdio transport is to type the request in Json format in the terminal running the server and looking at the responses in that terminal. These are three key examples for your reference.
 
 To list the tools available in the server:
 
@@ -264,7 +264,9 @@ TBC
 
 Now that the MCP server is ready, it is time to test it. In this case we will be using the MCP Inspector tool and the built-in MCP client in Visual Studio Code with GitHub Copilot extension.
 
-With MCP Inspector we will run some simple tests that will help us to validate that the MCP server works correctly without the added complexity of a conversational interface. With Visual Studio Code and GitHub Copilot extension we will add the conversational interface that allows, thanks to the LLMs ability to infer what we want to do, connect our errands with the actual MCP servers that know how to do them.
+With MCP Inspector we will run some simple tests that will help us to validate that the MCP server works correctly without the added complexity of a conversational interface.
+
+With Visual Studio Code and GitHub Copilot extension we will add the conversational interface that allows, thanks to the LLMs ability to infer what we want to do, connect our errands with the actual MCP servers that know how to do them.
 
 Regardless of the MCP client in use, take into consideration that when using stdio transport the MCP client is responsible for launching the MCP server.
 
@@ -361,7 +363,7 @@ Once you are finished, click the ```Disconnect``` button on the left panel and k
 
 Let's test the MCP server with the additional conversation interface available in the built-in MCP client in Visual Studio Code provided by the GitHub Copilot extension when working in Agent mode.
 
-The configuration is similar to the stdio example. The only difference is to select the correct transport type and the URL where the MCP server is listening to connections.
+The configuration is similar to the stdio example. The only difference is to select the correct transport type and type the URL where the MCP server is listening to connections.
 
 ![Explicit approval before running the tool within GitHub Copilot](images/copilot-run-tool-04.png)
 
